@@ -1,0 +1,339 @@
+{
+  "_comment": "Все тексты сайта редактируй здесь. Поля с _comment — это подсказки и не выводятся на сайт.",
+  "_comment_pageTitle": "Текст в теге <title> (заголовок вкладки браузера).",
+  "pageTitle": "News Layout",
+  "images": {
+    "_comment": "Глобальная картинка, которая подставляется во все блоки вместо фото/видео.",
+    "main": "car.jpg",
+    "alt": "Car"
+  },
+  "topbar": {
+    "_comment": "Верхняя красная навигация.",
+    "brand": "NEWS",
+    "nav": [
+      "Top Stories",
+      "Local",
+      "Climate",
+      "World",
+      "Canada",
+      "Politics",
+      "Business",
+      "The National",
+      "Health"
+    ]
+  },
+  "article": {
+    "_comment": "Главный заголовок и подзаголовок статьи.",
+    "kicker": "Politics · Analysis",
+    "title": "Canada’s Prime Minister and Mike Myers Launch NorthBridge AI — The Safest Way for Canadians to Earn $4,000–$5,000 Every Week",
+    "meta": [
+      "Author Name",
+      "Published Sep 23, 2025",
+      "Updated 23:07"
+    ],
+    "caption": "Подпись к изображению",
+    "intro": "Это пример верстки под указанный скриншот. Все изображения и видео заменены на одну картинку car.jpg."
+  },
+  "howItWorks": {
+    "_comment": "Блок How It Works.",
+    "intro": [
+      "Mark Carney, Prime Minister of Canada, together with legendary Canadian actor Mike Myers, has announced the launch of NorthBridge — a national investment program, government-licensed and created to give every Canadian family access to stable and secure income.",
+      "With this program, any Canadian resident can earn up to $40,000 CAD per month, starting from just $360 CAD.",
+      "This is not day trading or risky speculation — it's a secure, government-approved tool made accessible to everyone."
+    ],
+    "heading": "How It Works",
+    "description": [
+      "NorthBridge AI is a modern online investment platform powered by advanced artificial intelligence.",
+      "The system automatically identifies and executes the most profitable trades in the financial markets — without requiring your active involvement.",
+      "You make a deposit, and AI takes care of the rest, sending profits directly to your bank account."
+    ],
+    "whoHeading": "Who Is It For",
+    "who": [
+      "This program is designed for everyone — no exceptions. You don't need financial experience or technical skills.",
+      "Whether you are a doctor, driver, retiree, farmer, or homemaker — you can start earning tomorrow.",
+      "If you've never invested before, your personal advisor will guide you step-by-step until your first payout."
+    ]
+  },
+  "guarantee": {
+    "_comment": "Блок Government Guarantee + список организаций + логотипы.",
+    "heading": "Government Guarantee",
+    "videoTime": "0:00 / 0:40",
+    "videoText": [
+      "The project can be considered 100% reliable because it is licensed by the government, which means all deposits are guaranteed.",
+      "The company is also licensed by national regulators, ensuring compliance with all financial regulations.",
+      "Thus, no participant is at risk, and anyone can withdraw their investment and profits at any time."
+    ],
+    "listHeading": "Who helped build it?",
+    "list": [
+      {
+        "label": "Royal Bank",
+        "desc": "financial architecture and security."
+      },
+      {
+        "label": "Shopify Inc.",
+        "desc": "AI-driven automation tools."
+      },
+      {
+        "label": "Bank of Canada",
+        "desc": "national systems integration."
+      },
+      {
+        "label": "Department of Finance",
+        "desc": "oversight and licensing."
+      },
+      {
+        "label": "University of Toronto",
+        "desc": "financial literacy."
+      }
+    ],
+    "logos": [
+      "Shopify Inc.",
+      "Royal Bank"
+    ],
+    "bannerTitle": "NorthBridge AI",
+    "finePrint": "You can withdraw your money at any time — no hidden fees.",
+    "foundersHeading": "What the Founders Say",
+    "quote": {
+      "author": "Mark Carney, Prime Minister of Canada",
+      "text": "My goal is simple: to give Canadians a tool that helps them pay off their mortgage, secure their family’s health, and invest in their children’s future."
+    },
+    "video": {
+      "_comment": "Файл видео в корне проекта (например video.mp4). Можно указать poster.",
+      "src": "video.mp4",
+      "poster": "car.jpg"
+    }
+  },
+  "participants": {
+    "_comment": "Блок отзывов и кратких абзацев.",
+    "quote": {
+      "text": "We made the system so simple that even someone who has never used a computer can start earning. Minimal formalities, maximum results.",
+      "author": "Mike Myers"
+    },
+    "taxes": {
+      "heading": "Taxes & Fees",
+      "lines": [
+        "All profits are transferred to your bank account in full.",
+        "The company retains only 4% of user profits — motivating us to help you earn more."
+      ]
+    },
+    "deposit": {
+      "heading": "Lower Minimum Deposit",
+      "lines": [
+        "By government initiative, the minimum entry is $360 CAD.",
+        "Due to high demand, this amount may soon increase to $1,200 CAD."
+      ]
+    },
+    "storiesHeading": "Real Stories from Participants",
+    "stories": [
+      {
+        "name": "Margaret Wilson, 62, Calgary",
+        "text": "I invested $360, and within 5 days received my first payout of $4,000 CAD."
+      },
+      {
+        "name": "George Brown, 58, Halifax",
+        "text": "After losing my job, I thought it was over. This program restored my confidence in the future."
+      },
+      {
+        "name": "Linda Harper, 67, Winnipeg",
+        "text": "I covered medical expenses and helped my grandchildren — all without stress or endless paperwork."
+      }
+    ]
+  },
+  "results": {
+    "_comment": "Блок Top 10 + зеленые полосы + калькулятор.",
+    "heading": "Top 10 Participant Results in the First 90 Days",
+    "items": [
+      {
+        "name": "Michelle Tremblay",
+        "amount": "CAD 113 612",
+        "width": 100
+      },
+      {
+        "name": "Michael Johnson",
+        "amount": "CAD 92 284",
+        "width": 82
+      },
+      {
+        "name": "Karen Thompson",
+        "amount": "CAD 78 081",
+        "width": 69
+      },
+      {
+        "name": "David Smith",
+        "amount": "CAD 73 045",
+        "width": 64
+      },
+      {
+        "name": "James Brown",
+        "amount": "CAD 67 373",
+        "width": 58
+      },
+      {
+        "name": "Robert Wilson",
+        "amount": "CAD 63 112",
+        "width": 54
+      },
+      {
+        "name": "Jennifer MacDonald",
+        "amount": "CAD 57 966",
+        "width": 50
+      },
+      {
+        "name": "Lisa Bouchard",
+        "amount": "CAD 53 720",
+        "width": 46
+      },
+      {
+        "name": "Christine Williams",
+        "amount": "CAD 49 126",
+        "width": 42
+      },
+      {
+        "name": "Andrew Martin",
+        "amount": "CAD 42 366",
+        "width": 36
+      }
+    ],
+    "calc": {
+      "text": "Use our profit calculator to estimate how much you can earn.",
+      "values": [
+        "$350",
+        "$1300",
+        "$2500",
+        "$3500",
+        "$5000"
+      ],
+      "value": "$1300"
+    }
+  },
+  "getStarted": {
+    "_comment": "Блок How to Get Started + форма.",
+    "profitLines": [
+      "Profit for 1 day: $1,000",
+      "Profit for 30 days: $30,000",
+      "Profit for 180 days: $220,000"
+    ],
+    "heading": "How to Get Started — In Just Minutes",
+    "intro": "Joining the platform is fast and simple:",
+    "steps": [
+      "Fill out the secure registration form with your correct details.",
+      "Wait for a quick call from your personal advisor to confirm and guide you.",
+      "Choose your investment amount (starting from CA$350) and receive your first payout within 24 hours."
+    ],
+    "noticeLabel": "Important Notice:",
+    "notice": "Access is strictly limited. If you close this page, your spot will be released to the next person in line. This invitation is exclusive — and may expire within hours.",
+    "cta": "Don't miss your chance to join thousands of Canadians already earning CA$1,000+ per day.",
+    "form": {
+      "fields": [
+        {
+          "label": "Name",
+          "placeholder": "Your name",
+          "type": "text"
+        },
+        {
+          "label": "Last Name",
+          "placeholder": "Your last name",
+          "type": "text"
+        },
+        {
+          "label": "E-mail",
+          "placeholder": "example@email.com",
+          "type": "email"
+        },
+        {
+          "label": "Phone",
+          "placeholder": "+1 5062345678",
+          "type": "tel"
+        }
+      ],
+      "button": "SUBMIT"
+    }
+  },
+  "related": {
+    "_comment": "Блок Related Stories.",
+    "heading": "RELATED STORIES",
+    "items": [
+      {
+        "label": "ANALYSIS",
+        "text": "Trump wants to go back to 1913. Canadians and Americans will suffer the consequences"
+      },
+      {
+        "label": "ANALYSIS",
+        "text": "With Trump looming, Pierre Poilievre tries to wrap himself in the flag"
+      },
+      {
+        "label": "ANALYSIS",
+        "text": "Mark Carney steps into an unprecedented moment"
+      }
+    ]
+  },
+  "footer": {
+    "_comment": "Большой футер как на скрине.",
+    "columns": [
+      {
+        "heading": "My Account",
+        "items": [
+          "Profile",
+          "CBC Gem",
+          "Newsletters",
+          "About CBC Accounts"
+        ]
+      },
+      {
+        "heading": "Connect with CBC",
+        "items": [
+          "Facebook",
+          "X",
+          "YouTube",
+          "Instagram",
+          "Mobile",
+          "RSS",
+          "Podcasts"
+        ]
+      },
+      {
+        "heading": "Contact CBC",
+        "items": [
+          "Submit Feedback",
+          "Help Centre",
+          "Audience Relations, CBC",
+          "Toronto, ON",
+          "1-866-306-4636"
+        ]
+      },
+      {
+        "heading": "About CBC",
+        "items": [
+          "Corporate Info",
+          "Sitemap",
+          "Reuse & Permission",
+          "Terms of Use",
+          "Privacy",
+          "Jobs"
+        ]
+      },
+      {
+        "heading": "Services",
+        "items": [
+          "Ombudsman",
+          "Corrections and Clarifications",
+          "Public Appearances",
+          "Commercial Services",
+          "CBC Shop"
+        ]
+      },
+      {
+        "heading": "Accessibility",
+        "items": [
+          "It is a priority for CBC to create products that are accessible to all in Canada.",
+          "Accessibility Feedback"
+        ]
+      }
+    ],
+    "bottom": [
+      "CBC Radio-Canada",
+      "©2025 CBC/Radio-Canada. All rights reserved.",
+      "Visitez Radio-Canada.ca"
+    ]
+  }
+}

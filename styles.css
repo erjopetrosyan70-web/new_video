@@ -28,7 +28,7 @@ a {
 }
 
 .topbar {
-  background: var(--red);
+  background: #ffb20f;
   color: #fff;
   padding: 12px 0;
 }
@@ -149,6 +149,14 @@ h1 {
   object-fit: cover;
 }
 
+.video-still video {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  background: #000;
+  display: block;
+}
+
 .video-ui {
   position: absolute;
   left: 12px;
@@ -180,8 +188,14 @@ h1 {
 }
 
 .logo-card {
-  background: linear-gradient(135deg, #b80010, #1b1b1b);
-  color: #fff;
+  background: #c7cc29;
+  background: linear-gradient(
+    90deg,
+    rgba(199, 204, 41, 1) 1%,
+    rgba(255, 178, 15, 1) 100%,
+    rgba(217, 217, 217, 1) 100%
+  );
+  color: #000000;
   border-radius: 8px;
   padding: 16px;
   display: grid;
@@ -359,7 +373,7 @@ h1 {
 
 .steps li::before {
   content: "▾";
-  color: var(--red);
+  color: #ffb20f;
   margin-right: 8px;
 }
 
@@ -410,7 +424,7 @@ h1 {
 
 .form-card-dark button {
   margin-top: 6px;
-  background: var(--red);
+  background: #ffb20f;
   color: #fff;
   border: none;
   padding: 12px;
@@ -439,13 +453,13 @@ h1 {
 }
 
 .related li span {
-  color: var(--red);
+  color: #ffb20f;
   font-weight: 700;
   margin-right: 8px;
 }
 
 .mega-footer {
-  background: #f2f2f2;
+  background: #ffb30f2b;
   border-top: 1px solid var(--line);
 }
 
@@ -471,8 +485,8 @@ h1 {
 }
 
 .footer-bottom {
-  background: #111;
-  color: #fff;
+  background: #ffb20f;
+  color: #000000;
   padding: 12px 0;
   font-size: 12px;
 }
