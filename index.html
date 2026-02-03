@@ -32,7 +32,7 @@
 
     <main class="container article">
       <p class="kicker">Politics · Analysis</p>
-      <h1>
+      <h1 data-cms="title">
         “Canada’s Prime Minister and Mike Myers Launch NorthBridge AI — The Safest
         Way for Canadians to Earn $4,000–$5,000 Every Week”
       </h1>
@@ -50,7 +50,7 @@
       </figure>
 
       <section class="content">
-        <p>
+        <p data-cms="subtitle">
           Это пример верстки под указанный скриншот. Все изображения и видео
           заменены на одну картинку `car.jpg`.
         </p>
@@ -420,5 +420,16 @@
         </div>
       </div>
     </footer>
+    <script>
+      fetch("content/home.json")
+        .then((res) => res.json())
+        .then((data) => {
+          const titleEl = document.querySelector("[data-cms='title']");
+          const subtitleEl = document.querySelector("[data-cms='subtitle']");
+          if (titleEl && data.title) titleEl.textContent = data.title;
+          if (subtitleEl && data.subtitle) subtitleEl.textContent = data.subtitle;
+        })
+        .catch(() => {});
+    </script>
   </body>
 </html>
