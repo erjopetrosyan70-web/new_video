@@ -199,7 +199,7 @@ h1 {
   width: 100%;
   height: 360px;
   object-fit: cover;
-  object-position: center;
+  object-position: 50% 20%;
 }
 
 .hero figcaption {
@@ -243,7 +243,7 @@ h1 {
   width: 100%;
   height: 360px;
   object-fit: cover;
-  object-position: center;
+  object-position: 50% 20%;
 }
 
 .video-still {
@@ -343,7 +343,7 @@ h1 {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  object-position: center;
+  object-position: 50% 20%;
 }
 
 .banner figcaption {
@@ -368,7 +368,7 @@ h1 {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  object-position: center;
+  object-position: 50% 20%;
   border-radius: 8px;
 }
 
@@ -412,7 +412,7 @@ h1 {
   height: 64px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center;
+  object-position: 50% 20%;
   justify-self: center;
 }
 
@@ -445,7 +445,7 @@ h1 {
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center;
+  object-position: 50% 20%;
   justify-self: center;
 }
 
