@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="js-loading">
     <div class="utility-bar">
       <div class="container utility-inner">
         <div class="utility-left">
@@ -24,10 +24,7 @@
         </div>
         <div class="utility-right">
           <span class="utility-search"
-            ><img src="img/search.jpg" alt="Car" /><img
-              src="img/search.jpg"
-              alt="Car"
-            />Search</span
+            ><img src="img/search.jpg" alt="Car" />Search</span
           >
           <span class="utility-signin">Sign In</span>
         </div>
@@ -494,6 +491,12 @@
         return match ? match[1] : "";
       };
 
+      const nameToImage = (name) => {
+        if (!name) return "";
+        const base = String(name).split(",")[0].trim();
+        return base ? `img/${base}.jpeg` : "";
+      };
+
       const stripJsonComments = (input) => {
         let output = "";
         let inString = false;
@@ -785,17 +788,20 @@
               <h2>${escapeHtml(participants.storiesHeading || "")}</h2>
               <div class="story-list">
                 ${(participants.stories || [])
-                  .map(
-                    (story) => `
+                  .map((story) => {
+                    const storyImage = toUrl(
+                      story.image || nameToImage(story.name) || mainImage,
+                    );
+                    return `
                       <article>
-                        <img src="${mainImageUrl}" alt="${escapeHtml(imageAlt)}" />
+                        <img src="${storyImage}" alt="${escapeHtml(imageAlt)}" />
                         <div>
                           <h3>${escapeHtml(story.name || "")}</h3>
                           <p>“${escapeHtml(story.text || "")}”</p>
                         </div>
                       </article>
-                    `,
-                  )
+                    `;
+                  })
                   .join("")}
               </div>
             `;
@@ -817,16 +823,19 @@
               <h2>${escapeHtml(results.heading || "")}</h2>
               <ol class="results-list">
                 ${(results.items || [])
-                  .map(
-                    (item) => `
+                  .map((item) => {
+                    const itemImage = toUrl(
+                      item.image || nameToImage(item.name) || mainImage,
+                    );
+                    return `
                       <li>
-                        <img src="${mainImageUrl}" alt="${escapeHtml(imageAlt)}" />
+                        <img src="${itemImage}" alt="${escapeHtml(imageAlt)}" />
                         <span>${escapeHtml(item.name || "")}</span>
                         <span class="bar" style="--w: ${Number(item.width) || 0}%"></span>
                         <span>${escapeHtml(item.amount || "")}</span>
                       </li>
-                    `,
-                  )
+                    `;
+                  })
                   .join("")}
               </ol>
               <div class="calc">
@@ -934,9 +943,12 @@
               </div>
             `;
           }
+
+          document.body.classList.remove("js-loading");
         })
         .catch((error) => {
           console.error("Failed to load content/site.json", error);
+          document.body.classList.remove("js-loading");
         });
     </script>
   </body>

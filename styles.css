@@ -17,6 +17,12 @@ body {
   background: #fff;
 }
 
+/* Hide dynamic sections until JSON data is applied (prevents flash of wrong images) */
+.js-loading .participants,
+.js-loading .results-section {
+  visibility: hidden;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -193,6 +199,7 @@ h1 {
   width: 100%;
   height: 360px;
   object-fit: cover;
+  object-position: center;
 }
 
 .hero figcaption {
@@ -236,6 +243,7 @@ h1 {
   width: 100%;
   height: 360px;
   object-fit: cover;
+  object-position: center;
 }
 
 .video-still {
@@ -250,6 +258,7 @@ h1 {
   width: 100%;
   height: 340px;
   object-fit: cover;
+  object-position: center;
 }
 
 .video-still video {
@@ -319,6 +328,7 @@ h1 {
   height: 120px;
   border-radius: 6px;
   object-fit: cover;
+  object-position: center;
   background: #fff;
 }
 
@@ -333,6 +343,7 @@ h1 {
   width: 100%;
   height: 220px;
   object-fit: cover;
+  object-position: center;
 }
 
 .banner figcaption {
@@ -357,6 +368,7 @@ h1 {
   width: 100%;
   height: 220px;
   object-fit: cover;
+  object-position: center;
   border-radius: 8px;
 }
 
@@ -400,6 +412,8 @@ h1 {
   height: 64px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center;
+  justify-self: center;
 }
 
 .story-list h3 {
@@ -431,6 +445,8 @@ h1 {
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center;
+  justify-self: center;
 }
 
 .bar {

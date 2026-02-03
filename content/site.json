@@ -208,7 +208,8 @@
       {
         "name": "Jennifer MacDonald",
         "amount": "CAD 57 966",
-        "width": 50
+        "width": 50,
+        "image": "img/Jennifer MacDonald.jpeg"
       },
       {
         "name": "Lisa Bouchard",
