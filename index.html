@@ -108,7 +108,12 @@
       <section class="content guarantee">
         <h2>Government Guarantee</h2>
         <figure class="video-still">
-          <video class="video-embed" controls preload="metadata" poster="car.jpg">
+          <video
+            class="video-embed"
+            controls
+            preload="metadata"
+            poster="car.jpg"
+          >
             <source src="video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -365,7 +370,7 @@
           <input type="email" placeholder="example@email.com" />
           <label>Phone</label>
           <input type="tel" placeholder="+1 5062345678" />
-          <button>SUBMIT</button>
+          <button class="sumbit_link">SUBMIT</button>
         </div>
       </section>
     </main>
@@ -702,11 +707,13 @@
           if (resultsSection) {
             const calc = results.calc || {};
             const calcValues = (calc.values || []).map((value) =>
-              Number(String(value).replace(/[^\d.-]/g, ""))
+              Number(String(value).replace(/[^\d.-]/g, "")),
             );
             const minValue = calcValues.length ? Math.min(...calcValues) : 350;
             const maxValue = calcValues.length ? Math.max(...calcValues) : 5000;
-            const initialValue = Number(String(calc.value || minValue).replace(/[^\d.-]/g, "")) || minValue;
+            const initialValue =
+              Number(String(calc.value || minValue).replace(/[^\d.-]/g, "")) ||
+              minValue;
 
             resultsSection.innerHTML = `
               <h2>${escapeHtml(results.heading || "")}</h2>
@@ -734,7 +741,9 @@
               </div>
             `;
 
-            const range = resultsSection.querySelector(".calc input[type='range']");
+            const range = resultsSection.querySelector(
+              ".calc input[type='range']",
+            );
             const box = resultsSection.querySelector(".calc-box");
             if (range && box) {
               const updateBox = () => {
