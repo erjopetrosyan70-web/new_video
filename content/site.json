@@ -2,14 +2,23 @@
   "_comment": "Все тексты сайта редактируй здесь. Поля с _comment — это подсказки и не выводятся на сайт.",
   "_comment_pageTitle": "Текст в теге <title> (заголовок вкладки браузера).",
   "pageTitle": "News Layout",
+  "utilityBar": {
+    "_comment": "Самый верхний тонкий хедер (Menu / CBC / Search / Sign In).",
+    "menu": "Menu",
+    "brand": "FOX NEWS",
+    "search": "Search",
+    "signIn": "Sign In",
+    "logo": "img/foxnews.jpg",
+    "searchIcon": "img/search.jpg"
+  },
   "images": {
     "_comment": "Глобальная картинка, которая подставляется во все блоки вместо фото/видео.",
-    "main": "car.jpg",
-    "alt": "Car"
+    "main": "img/robert greene4.jpeg",
+    "alt": "Photo"
   },
   "topbar": {
     "_comment": "Верхняя красная навигация.",
-    "brand": "NEWS",
+    "brand": "FoxNews",
     "nav": [
       "Top Stories",
       "Local",
@@ -32,7 +41,8 @@
       "Updated 23:07"
     ],
     "caption": "Подпись к изображению",
-    "intro": "Это пример верстки под указанный скриншот. Все изображения и видео заменены на одну картинку car.jpg."
+    "intro": "Это пример верстки под указанный скриншот. Все изображения берутся из папки img.",
+    "heroImage": "img/robert greene4.jpeg"
   },
   "howItWorks": {
     "_comment": "Блок How It Works.",
@@ -52,7 +62,8 @@
       "This program is designed for everyone — no exceptions. You don't need financial experience or technical skills.",
       "Whether you are a doctor, driver, retiree, farmer, or homemaker — you can start earning tomorrow.",
       "If you've never invested before, your personal advisor will guide you step-by-step until your first payout."
-    ]
+    ],
+    "image": "img/robert greene3.jpeg"
   },
   "guarantee": {
     "_comment": "Блок Government Guarantee + список организаций + логотипы.",
@@ -87,8 +98,14 @@
       }
     ],
     "logos": [
-      "Shopify Inc.",
-      "Royal Bank"
+      {
+        "label": "Shopify Inc.",
+        "image": "img/Shopify Inc..png"
+      },
+      {
+        "label": "Royal Bank",
+        "image": "img/Royal Bank.png"
+      }
     ],
     "bannerTitle": "NorthBridge AI",
     "finePrint": "You can withdraw your money at any time — no hidden fees.",
@@ -99,9 +116,15 @@
     },
     "video": {
       "_comment": "Файл видео в корне проекта (например video.mp4). Можно указать poster.",
-      "src": "video.mp4",
-      "poster": "car.jpg"
-    }
+      "src": "https://youtu.be/ATF0eojEEKE",
+      "poster": "img/robert greene2.jpeg",
+      "type": "youtube"
+    },
+    "bannerImage": "img/robert greene2.jpeg",
+    "foundersImages": [
+      "img/robert greene.jpeg",
+      "img/robert greene1.jpeg"
+    ]
   },
   "participants": {
     "_comment": "Блок отзывов и кратких абзацев.",
@@ -127,15 +150,18 @@
     "stories": [
       {
         "name": "Margaret Wilson, 62, Calgary",
-        "text": "I invested $360, and within 5 days received my first payout of $4,000 CAD."
+        "text": "I invested $360, and within 5 days received my first payout of $4,000 CAD.",
+        "image": "img/Margaret Wilson.jpeg"
       },
       {
         "name": "George Brown, 58, Halifax",
-        "text": "After losing my job, I thought it was over. This program restored my confidence in the future."
+        "text": "After losing my job, I thought it was over. This program restored my confidence in the future.",
+        "image": "img/George Brown.jpeg"
       },
       {
         "name": "Linda Harper, 67, Winnipeg",
-        "text": "I covered medical expenses and helped my grandchildren — all without stress or endless paperwork."
+        "text": "I covered medical expenses and helped my grandchildren — all without stress or endless paperwork.",
+        "image": "img/Linda Harper.jpeg"
       }
     ]
   },
@@ -146,32 +172,38 @@
       {
         "name": "Michelle Tremblay",
         "amount": "CAD 113 612",
-        "width": 100
+        "width": 100,
+        "image": "img/Michelle Tremblay.jpeg"
       },
       {
         "name": "Michael Johnson",
         "amount": "CAD 92 284",
-        "width": 82
+        "width": 82,
+        "image": "img/Michael Johnson.jpeg"
       },
       {
         "name": "Karen Thompson",
         "amount": "CAD 78 081",
-        "width": 69
+        "width": 69,
+        "image": "img/Karen Thompson.jpeg"
       },
       {
         "name": "David Smith",
         "amount": "CAD 73 045",
-        "width": 64
+        "width": 64,
+        "image": "img/David Smith.jpeg"
       },
       {
         "name": "James Brown",
         "amount": "CAD 67 373",
-        "width": 58
+        "width": 58,
+        "image": "img/James Brown.jpeg"
       },
       {
         "name": "Robert Wilson",
         "amount": "CAD 63 112",
-        "width": 54
+        "width": 54,
+        "image": "img/Robert Wilson.jpeg"
       },
       {
         "name": "Jennifer MacDonald",
@@ -181,17 +213,20 @@
       {
         "name": "Lisa Bouchard",
         "amount": "CAD 53 720",
-        "width": 46
+        "width": 46,
+        "image": "img/Lisa Bouchard.jpeg"
       },
       {
         "name": "Christine Williams",
         "amount": "CAD 49 126",
-        "width": 42
+        "width": 42,
+        "image": "img/Christine Williams.jpeg"
       },
       {
         "name": "Andrew Martin",
         "amount": "CAD 42 366",
-        "width": 36
+        "width": 36,
+        "image": "img/Andrew Martin.jpeg"
       }
     ],
     "calc": {
