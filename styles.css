@@ -131,9 +131,11 @@ a {
 }
 
 .topbar-logo {
-  height: 18px;
+  height: 74px;
   width: auto;
   display: block;
+  margin-top: -24px;
+  margin-bottom: -18px;
 }
 
 .topbar {
@@ -145,12 +147,15 @@ a {
 .topbar-inner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 24px;
 }
 
 .logo {
   font-weight: 700;
   letter-spacing: 0.12em;
+  flex-shrink: 0;
+  position: relative;
 }
 
 .nav {
@@ -158,6 +163,68 @@ a {
   gap: 18px;
   flex-wrap: wrap;
   font-size: 14px;
+  flex: 1;
+  min-width: 0;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-shrink: 0;
+}
+
+.topbar-meta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 13px;
+}
+
+.topbar-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 4px 6px;
+}
+
+.topbar-link:hover {
+  opacity: 0.85;
+}
+
+.topbar-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.cta-spot {
+  display: flex;
+  justify-content: flex-start;
+  margin: 18px 0 10px;
+}
+
+.cta-pill {
+  background: var(--red);
+  border: 1px solid #b80017;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(208, 2, 27, 0.28);
+}
+
+.cta-pill:hover {
+  background: #ff1c2e;
 }
 
 .article {
@@ -630,6 +697,21 @@ h1 {
   .topbar-inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .topbar-actions {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .topbar-logo {
+    height: 58px;
+    margin-top: -16px;
+    margin-bottom: -12px;
+  }
+
+  .cta-spot {
+    justify-content: flex-start;
   }
 }
 .form-card-dark button:hover {

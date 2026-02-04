@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,38 +13,42 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="js-loading">
-    <div class="utility-bar">
-      <div class="container utility-inner">
-        <div class="utility-left">
-          <span class="burger" aria-hidden="true"></span>
-          <span class="utility-menu">Menu</span>
-        </div>
-        <div class="utility-center">
-          <span class="utility-brand">CBC</span>
-        </div>
-        <div class="utility-right">
-          <span class="utility-search"
-            ><img src="img/search.jpg" alt="Car" />Search</span
-          >
-          <span class="utility-signin">Sign In</span>
-        </div>
-      </div>
-    </div>
-
     <header class="topbar">
       <div class="container topbar-inner">
-        <div class="logo">Fox News</div>
+        <div class="logo">
+          <img class="topbar-logo" src="img/foxnews.jpg" alt="Fox News" />
+        </div>
         <nav class="nav">
-          <a href="#">Top Stories</a>
-          <a href="#">Local</a>
-          <a href="#">Climate</a>
-          <a href="#">World</a>
-          <a href="#">Canada</a>
+          <a href="#">U.S.</a>
           <a href="#">Politics</a>
           <a href="#">Business</a>
-          <a href="#">The National</a>
+          <a href="#">Economy</a>
+          <a href="#">Markets</a>
+          <a href="#">Personal Finance</a>
           <a href="#">Health</a>
+          <a href="#">Opinion</a>
+          <a href="#">Video</a>
         </nav>
+        <div class="topbar-actions">
+          <div class="topbar-meta">
+            <button class="topbar-link" type="button">
+              <svg class="topbar-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M10 3a7 7 0 1 0 4.32 12.52l4.58 4.58 1.41-1.41-4.58-4.58A7 7 0 0 0 10 3Zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z"
+                />
+              </svg>
+              <span>Search</span>
+            </button>
+            <button class="topbar-link" type="button">
+              <svg class="topbar-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 2c-4.42 0-8 2.24-8 5v1h16v-1c0-2.76-3.58-5-8-5Z"
+                />
+              </svg>
+              <span>Sign In</span>
+            </button>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -581,6 +585,10 @@
           const getStarted = site.getStarted || {};
           const related = site.related || {};
           const footer = site.footer || {};
+          const ctaText = site.ctaText || "Start my earnings";
+          const ctaMarkup = `<div class="cta-spot"><button class="cta-pill" type="button">${escapeHtml(
+            ctaText,
+          )}</button></div>`;
 
           const heroImage = toUrl(article.heroImage || mainImage);
           const howImage = toUrl(howItWorks.image || mainImage);
@@ -688,6 +696,7 @@
               ${(howItWorks.who || [])
                 .map((p) => `<p>${escapeHtml(p)}</p>`)
                 .join("")}
+              ${ctaMarkup}
             `;
           }
 
@@ -743,6 +752,7 @@
                   })
                   .join("")}
               </div>
+              ${ctaMarkup}
             `;
           }
 
@@ -785,6 +795,7 @@
               ${(taxes.lines || []).map((p) => `<p>${escapeHtml(p)}</p>`).join("")}
               <h2>${escapeHtml(deposit.heading || "")}</h2>
               ${(deposit.lines || []).map((p) => `<p>${escapeHtml(p)}</p>`).join("")}
+              ${ctaMarkup}
               <h2>${escapeHtml(participants.storiesHeading || "")}</h2>
               <div class="story-list">
                 ${(participants.stories || [])
@@ -846,6 +857,7 @@
                 </div>
                 <div class="calc-box">$${initialValue}</div>
               </div>
+              ${ctaMarkup}
             `;
 
             const range = resultsSection.querySelector(
@@ -882,6 +894,7 @@
                 ${escapeHtml(getStarted.notice || "")}
               </div>
               <p class="cta-line">${escapeHtml(getStarted.cta || "")}</p>
+              ${ctaMarkup}
               <div class="form-card-dark">
                 ${(form.fields || [])
                   .map(
